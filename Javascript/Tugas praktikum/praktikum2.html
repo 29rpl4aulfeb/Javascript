@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Praktikum 2</title>
+</head>
+<SCRIPT language="Javascript">
+
+function hitung (hsl){
+document.send.C.value= hsl
+}
+
+function jumlah(bil1,bil2){
+var hasil = Number(bil1) + Number(bil2)
+hitung (hasil)
+}
+
+function kurangin(bil1,bil2){
+var hasil = bil1 - bil2
+hitung (hasil)
+}
+
+function dikali(bil1,bil2){
+var hasil = bil1 * bil2
+hitung (hasil)
+}
+
+function dibagi(bil1,bil2){
+var hasil = bil1 / bil2
+hitung (hasil)
+}
+
+</SCRIPT>
+
+<body>
+<form method="POST" name="send">
+<p>Bilangan 1 <input type="text" name="A" size="20"> <br></p>
+
+<p>Bilangan 2 <input type="text" name="B" size="20"> <br></p>
+
+<p>Hasil <input type="text" name="C" size="20" readonly> <br></p>
+
+<input type="button" value="+" name="tambah" onclick="jumlah(document.send.A.value, document.send.B.value)">
+<input type="button" value="-" name="kurang" onclick="kurangin(document.send.A.value, document.send.B.value)">
+<input type="button" value="×" name="kali" onclick="dikali(document.send.A.value, document.send.B.value)">
+<input type="button" value="÷" name="bagi" onclick="dibagi(document.send.A.value, document.send.B.value)">
+</form>
+</body>
+</html>

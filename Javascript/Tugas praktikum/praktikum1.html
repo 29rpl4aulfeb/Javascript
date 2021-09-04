@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Praktikum 1</title>
+</head>
+<SCRIPT language="Javascript">
+function test (){
+var a= document.send.A.value
+if (a >= 93){
+document.send.B.value= "A"
+}
+else if (a >= 83){
+document.send.B.value= "B"
+}
+else if (a >= 75){
+document.send.B.value= "C"
+}
+else if (a >= 50){
+document.send.B.value= "D"
+}
+else if (a >= 0){
+document.send.B.value= "E"
+}
+else {
+document.send.B.value= "Tidak ada Keterangan"
+}
+}
+</SCRIPT>
+<body>
+<form method="POST" name="send">
+<p>Nilai <input type="text" name="A" size="20">
+<br></p>
+
+<p><input type ="button" value ="Cek" name="C" onclick=test()>
+<br></p>
+
+<p>Keterangan <input type="text" name="B" size="20">
+<br></p>
+
+</form>
+</body>
+</html>   
